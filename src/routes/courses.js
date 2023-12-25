@@ -9,6 +9,8 @@ router.get('/create', courseController.create);
 
 router.get('/:id/edit', courseController.edit);
 
+router.post('/handle-form-actions', courseController.handleFormActions);
+
 router.put('/:id', courseController.update);
 
 router.patch('/:id/restore', courseController.restore);
